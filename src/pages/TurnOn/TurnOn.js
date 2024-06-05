@@ -1,13 +1,26 @@
+
 import './TurnOn.css'
 
-function TurnOn(){
-    return(
-      <label>
-        <div>fdf</div>
-        <input type="checkbox" />
-        <i></i>
-      </label>
-    )
+function lightTurnOn() {
+  const button = document.querySelector('#turnOnBackground')
+  button.classList.add('turnOnBackgroundAnimation')
+  setTimeout(() => {
+    window.location.href = './home';
+  }, 3000);
+}
+
+function TurnOn() {
+  return (
+    <section id='turnOnBackground' className='turnOnBackground'>
+      <button onClick={lightTurnOn} id='turnOnButton' className='turnOnButton'>
+        <label>
+          <input type="checkbox" /><i></i>
+        </label>
+
+      </button>
+    </section>
+
+  )
 }
 
 export default TurnOn;

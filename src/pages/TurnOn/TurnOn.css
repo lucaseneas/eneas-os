@@ -2,17 +2,6 @@
     box-sizing: border-box;
   }
   
-  
-  body {
-    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;
-    
-  
-  }
-  
-  
-  
   label {
     display: block; 
     position: absolute;
@@ -79,5 +68,34 @@
     &:hover {
       cursor: pointer;
     }
+}
+
+.turnOnButton{
+  text-decoration: none;
+  background: none;
+  border:none;
+}
+
+.turnOnBackgroundAnimation{
+  background-color: #252525f5;
+  animation: lightTurnOn 5s linear;
+  animation-direction: alternate;
+}
+
+.turnOnBackground{
+  background-image: url('./../../images/background2.png');
+  background-size: auto; 
+  width: 100vw;
+  height: 100vh;
+
+}
+
+@keyframes lightTurnOn{
+  0%{
+    filter: brightness(100%);
+  }
+  100%{
+    filter: brightness(3000%);
   }
   
+}
