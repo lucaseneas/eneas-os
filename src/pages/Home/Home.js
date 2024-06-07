@@ -1,3 +1,10 @@
+
+import IconMeuPortifolio from './../../images/IconWorkspace/meu-portifolio.png'
+import IconNarutoCard from './../../images/IconWorkspace/naruto-card.png'
+import IconGitHub from './../../images/IconWorkspace/gitHub.png'
+import IconLinkedIn from './../../images/IconWorkspace/linkedIn.png'
+
+import IconWorkspace from '../../components/IconWorkspace/IconWorkspace';
 import './Home.css'
 import React, { useState, useEffect } from 'react';
 
@@ -60,7 +67,22 @@ function Home(){
                     <img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF'/>
                 </div>
             </section>
-
+            <section className='workspace'>
+              <div>
+                <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
+                <IconWorkspace name='Naruto Cards' src={IconNarutoCard} url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
+                <IconWorkspace name='GitHub' src={IconGitHub} url='https://github.com/lucaseneas'></IconWorkspace>
+                <IconWorkspace name='LinkedIn' src={IconLinkedIn} url='https://www.youtube.com/'></IconWorkspace>
+              </div>
+              <div id='iFrameDiv' className='iFrameDiv'>
+                <div className='topFrame'>
+                  <img src='https://img.icons8.com/?size=100&id=15050&format=png&color=000000'/>
+                  <img src='https://img.icons8.com/?size=100&id=KERvxIIUeDAL&format=png&color=000000'/>
+                  <img src='https://img.icons8.com/?size=100&id=16248&format=png&color=000000'/>
+                </div>
+                <iframe id='iFrame' src="https://lucaseneas.github.io/meu-portifolio/"></iframe>
+              </div>
+            </section>
             <section className='taskBar'>
                 <div className='taskBarIcons'>
                     <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000'></img>

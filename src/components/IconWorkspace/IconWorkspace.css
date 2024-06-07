@@ -1,0 +1,18 @@
+.iconWorkspace-buttom{
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconWorkspace-buttom img{
+    margin-bottom: -10px;
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+}
