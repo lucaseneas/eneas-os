@@ -3,6 +3,7 @@
 }
 
 .subSectionLogin {
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +17,7 @@
     box-shadow: 0 8px 32px 0 #1f26875e;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    z-index: 10;
+    
 }
 
 .displayNone {
@@ -26,6 +27,8 @@
 .loginImg {
     width: 15vw;
 }
+
+
 
 .loginButton {
     color: white;
@@ -46,9 +49,7 @@
     box-shadow: 0 6px 15px 0 #010541c4;
 }
 
-.loginButton-Animation {
-    animation: fadeOut 1s ease-in-out;
-}
+
 
 .subSectionLogin.fadeOut {
     opacity: 0;
@@ -57,13 +58,25 @@
 .auxIconsDiv {
     position: absolute;
     right: 3vw;
-    bottom: 4vh;
-    height: 3vh;
+    bottom: 5vh;
+    height: 4vh;
+    
 }
 
 .auxIconsDiv img {
     height: 100%;
     margin-right: 1vw;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.auxIconsDiv img:hover{
+    background-color: rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    background: #ffffff1a;
+    box-shadow: 0 8px 32px 0 #1f26875e;
     cursor: pointer;
 }
 
@@ -113,7 +126,7 @@
 }
 
 .taskBarRightIcons {
-    width: 15%;
+    width: 19%;
     justify-content: flex-end;
     align-items: center;
     right: 0px;
@@ -122,8 +135,9 @@
 }
 
 .taskBarRightIcons img {
-    margin-right: 0.5vw;
-    height: 50%
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
 }
 
 .taskBarRightIcons div {
@@ -135,18 +149,27 @@
 
 .workspace {
     width: 100vw;
-    height: 80vh;
+    height: 88vh;
     display: flex;
+    position: relative;
+    top: 0px;
     align-items: center;
     justify-content: center;
+    z-index: 3
 }
 
-
+.workspaceDiv{
+    position:absolute;
+    left: 1vw;
+    top:2vh;
+    z-index: 4
+}
 
 .iFrameDiv {
-    height: 80vh;
-    width: 80vw;
+    height: 86vh;
+    width: 85vw;
     display: none;
+    box-shadow: 5px 5px 20px #000000b0;
 
 }
 
@@ -162,9 +185,34 @@
     align-items: center;
 }
 
-.topFrame img {
-    height: 70%;
-    margin-right: 1%;
+.topFrame button{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
+
+.topFrame button img {
+    height: 100%;
+    padding: 0.2% 0.8% 0.2% 0.8%;
+}
+
+
+.topFrame-close:hover{
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    background: #ff000086;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    cursor: pointer;
+}
+
+.topFrame-minimize-maximize:hover{
+    background-color: rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    background: #ffffff1a;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    cursor: pointer;
 }
 
 .iFrameDiv iframe {

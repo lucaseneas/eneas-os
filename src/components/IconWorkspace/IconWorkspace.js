@@ -8,10 +8,7 @@ function openWindow(url){
    iFrame.src = url
 }
 
-function closeWindow(){
-    const frame = document.querySelector('#iFrameDiv');
-    frame.classList.remove('active')
-}
+
 
 function IconWorkspace(props){
     return(

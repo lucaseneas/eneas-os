@@ -95,7 +95,7 @@
     filter: brightness(100%);
   }
   100%{
-    filter: brightness(3000%);
+    filter: brightness(-700%);
   }
   
 }

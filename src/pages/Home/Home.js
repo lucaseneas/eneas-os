@@ -8,21 +8,24 @@ import IconWorkspace from '../../components/IconWorkspace/IconWorkspace';
 import './Home.css'
 import React, { useState, useEffect } from 'react';
 
-function LoginFadeOut(){
-    const subSectionLogin = document.querySelector('#subSectionLogin')
-    subSectionLogin.classList.add('fadeOut');
-    setTimeout(() => {
-        subSectionLogin.classList.add('displayNone');
-      }, 2000);
-    
+function loginFadeOut() {
+  const subSectionLogin = document.querySelector('#subSectionLogin')
+  subSectionLogin.classList.add('fadeOut');
+  setTimeout(() => {
+    subSectionLogin.classList.add('displayNone');
+  }, 2000);
+
+}
+
+function closeWindow() {
+  const frame = document.querySelector('#iFrameDiv');
+  frame.classList.remove('active')
 }
 
 
-
-
-function Home(){
-    const [time, setTime] = useState(new Date());
-    const [currentDate, setCurrentDate] = useState(new Date());
+function Home() {
+  const [time, setTime] = useState(new Date());
+  const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
     const timerId = setInterval(() => {
@@ -56,57 +59,57 @@ function Home(){
   };
 
 
-    return(
-        <section>
-            <section id='subSectionLogin' className='subSectionLogin'>
-                <img className='loginImg' src='https://lucaseneas.github.io/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png'></img>
-                <button onClick={LoginFadeOut} className='loginButton'>Login</button>
-                <div className='auxIconsDiv'>
-                    <img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF'/>
-                    <img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF'/>
-                    <img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF'/>
-                </div>
-            </section>
-            <section className='workspace'>
-              <div>
-                <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
-                <IconWorkspace name='Naruto Cards' src={IconNarutoCard} url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
-                <IconWorkspace name='GitHub' src={IconGitHub} url='https://github.com/lucaseneas'></IconWorkspace>
-                <IconWorkspace name='LinkedIn' src={IconLinkedIn} url='https://www.youtube.com/'></IconWorkspace>
-              </div>
-              <div id='iFrameDiv' className='iFrameDiv'>
-                <div className='topFrame'>
-                  <img src='https://img.icons8.com/?size=100&id=15050&format=png&color=000000'/>
-                  <img src='https://img.icons8.com/?size=100&id=KERvxIIUeDAL&format=png&color=000000'/>
-                  <img src='https://img.icons8.com/?size=100&id=16248&format=png&color=000000'/>
-                </div>
-                <iframe id='iFrame' src="https://lucaseneas.github.io/meu-portifolio/"></iframe>
-              </div>
-            </section>
-            <section className='taskBar'>
-                <div className='taskBarIcons'>
-                    <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000'></img>
-                    <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=Jw9nt2gzEivq&format=png&color=000000'></img>
-                    <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000'></img>
-                    <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000'></img>
-                    <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=ejub91zEY6Sl&format=png&color=000000'></img>
-                    <img className='taskBarIconsImg'src='https://img.icons8.com/?size=100&id=zNqjI8XKkCv0&format=png&color=000000'></img>
-                </div>
-                <div className='taskBarRightIcons'>
-                    <img alt='arrow' src='https://img.icons8.com/?size=100&id=15813&format=png&color=FFFFFF'/>
-                    <img alt='volume' src='https://img.icons8.com/?size=100&id=14172&format=png&color=FFFFFF'/>
-                    <img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF'/>
-                    <img alt='battery' src='https://img.icons8.com/?size=100&id=14184&format=png&color=FFFFFF'/>
-                    <div>
-                        <div>{formatTime(time)}</div>
-                        <div>{formatDate(currentDate)}</div>
-                    </div>
-                    <img alt='notify' src='https://img.icons8.com/?size=100&id=14180&format=png&color=FFFFFF'/>
-                    
-                </div>
-            </section>
-        </section>
-    )
+  return (
+    <section>
+      <section id='subSectionLogin' className='subSectionLogin'>
+        <img className='loginImg' src='https://lucaseneas.github.io/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png'></img>
+        <button onClick={loginFadeOut} className='loginButton'>Login</button>
+        <div className='auxIconsDiv'>
+          <img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' />
+          <img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' />
+          <img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' />
+        </div>
+      </section>
+      <section className='workspace'>
+        <div className='workspaceDiv'>
+          <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
+          <IconWorkspace name='Naruto Cards' src={IconNarutoCard} url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
+          <IconWorkspace name='GitHub' src={IconGitHub} url='https://github.com/lucaseneas'></IconWorkspace>
+          <IconWorkspace name='LinkedIn' src={IconLinkedIn} url='https://www.youtube.com/'></IconWorkspace>
+        </div>
+        <div id='iFrameDiv' className='iFrameDiv'>
+          <div className='topFrame'>
+            <button onClick={closeWindow} className='topFrame-minimize-maximize'><img src='https://img.icons8.com/?size=100&id=15050&format=png&color=000000' /></button>
+            <button className='topFrame-minimize-maximize'><img src='https://img.icons8.com/?size=100&id=KERvxIIUeDAL&format=png&color=000000' /></button>
+            <button onClick={closeWindow} className='topFrame-close'><img src='https://img.icons8.com/?size=100&id=16248&format=png&color=000000' /></button>
+          </div>
+          <iframe id='iFrame' src="https://lucaseneas.github.io/meu-portifolio/"></iframe>
+        </div>
+      </section>
+      <section className='taskBar'>
+        <div className='taskBarIcons'>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000'></img>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=Jw9nt2gzEivq&format=png&color=000000'></img>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000'></img>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000'></img>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=ejub91zEY6Sl&format=png&color=000000'></img>
+          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=zNqjI8XKkCv0&format=png&color=000000'></img>
+        </div>
+        <div className='taskBarRightIcons'>
+          <img alt='arrow' src='https://img.icons8.com/?size=100&id=15813&format=png&color=FFFFFF' />
+          <img alt='volume' src='https://img.icons8.com/?size=100&id=14172&format=png&color=FFFFFF' />
+          <img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' />
+          <img alt='battery' src='https://img.icons8.com/?size=100&id=14184&format=png&color=FFFFFF' />
+          <div>
+            <div>{formatTime(time)}</div>
+            <div>{formatDate(currentDate)}</div>
+          </div>
+          <img alt='notify' src='https://img.icons8.com/?size=100&id=14180&format=png&color=FFFFFF' />
+
+        </div>
+      </section>
+    </section>
+  )
 }
 
 export default Home;
