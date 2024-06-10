@@ -8,11 +8,19 @@ function openWindow(url){
    iFrame.src = url
 }
 
+function iconButtonAction(action,url){
+    if(action == "frame"){
+        openWindow(url)
+    }
+    if(action == "external"){
+        window.location.href = url
+    }
 
+}
 
 function IconWorkspace(props){
     return(
-    <button onClick={() => openWindow(props.url)} className='iconWorkspace-buttom'>
+    <button onClick={() => iconButtonAction(props.action,props.url)} className='iconWorkspace-buttom'>
         <img src={props.src}></img>
         <p>{props.name}</p>
     </button>

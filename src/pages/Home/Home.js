@@ -3,6 +3,7 @@ import IconMeuPortifolio from './../../images/IconWorkspace/meu-portifolio.png'
 import IconNarutoCard from './../../images/IconWorkspace/naruto-card.png'
 import IconGitHub from './../../images/IconWorkspace/gitHub.png'
 import IconLinkedIn from './../../images/IconWorkspace/linkedIn.png'
+import ProfileImage from './../../images/profileImage.png'
 
 import IconWorkspace from '../../components/IconWorkspace/IconWorkspace';
 import './Home.css'
@@ -62,20 +63,20 @@ function Home() {
   return (
     <section>
       <section id='subSectionLogin' className='subSectionLogin'>
-        <img className='loginImg' src='https://lucaseneas.github.io/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png'></img>
+        <img className='loginImg' src={ProfileImage}></img>
         <button onClick={loginFadeOut} className='loginButton'>Login</button>
         <div className='auxIconsDiv'>
-          <img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' />
-          <img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' />
-          <img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' />
+          <button><img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' /></button>
+          <button><img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' /></button>
+          <button><img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' /></button>
         </div>
       </section>
       <section className='workspace'>
         <div className='workspaceDiv'>
-          <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
-          <IconWorkspace name='Naruto Cards' src={IconNarutoCard} url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
-          <IconWorkspace name='GitHub' src={IconGitHub} url='https://github.com/lucaseneas'></IconWorkspace>
-          <IconWorkspace name='LinkedIn' src={IconLinkedIn} url='https://www.youtube.com/'></IconWorkspace>
+          <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} action='frame' url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
+          <IconWorkspace name='Naruto Cards' src={IconNarutoCard} action='frame' url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
+          <IconWorkspace name='GitHub' src={IconGitHub} action='external' url='https://github.com/lucaseneas'></IconWorkspace>
+          <IconWorkspace name='LinkedIn' src={IconLinkedIn} action='external' url='https://www.linkedin.com/in/lucas-eneas/'></IconWorkspace>
         </div>
         <div id='iFrameDiv' className='iFrameDiv'>
           <div className='topFrame'>
@@ -88,12 +89,12 @@ function Home() {
       </section>
       <section className='taskBar'>
         <div className='taskBarIcons'>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000'></img>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=Jw9nt2gzEivq&format=png&color=000000'></img>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000'></img>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000'></img>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=ejub91zEY6Sl&format=png&color=000000'></img>
-          <img className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=zNqjI8XKkCv0&format=png&color=000000'></img>
+          <img alt='Windows' className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000'></img>
+          <img alt='Windows explorer'className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=Jw9nt2gzEivq&format=png&color=000000'></img>
+          <img alt='Microsoft Edge' className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000'></img>
+          <img alt='Discord' className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000'></img>
+          <img alt='Google Chrome' className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=ejub91zEY6Sl&format=png&color=000000'></img>
+          <img alt='Steam' className='taskBarIconsImg' src='https://img.icons8.com/?size=100&id=zNqjI8XKkCv0&format=png&color=000000'></img>
         </div>
         <div className='taskBarRightIcons'>
           <img alt='arrow' src='https://img.icons8.com/?size=100&id=15813&format=png&color=FFFFFF' />

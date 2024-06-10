@@ -8,9 +8,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 110px;
-    width: 100px;
-    padding: 0px;
+
+    width: 5.6vw;
+    padding: 1px;
+    
 }
 
 .iconWorkspace-buttom:hover{
@@ -25,4 +26,7 @@
     margin-bottom: -10px;
     width: 80%;
     background-color: transparent;
+}
+.iconWorkspace-buttom p{
+    font-size: 0.8vw;
 }

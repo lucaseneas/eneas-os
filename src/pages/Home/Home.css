@@ -70,6 +70,11 @@
     padding: 7px;
     border-radius: 10px;
 }
+.auxIconsDiv button {
+    border: none;
+    height: 100%;
+    background: transparent;
+}
 
 .auxIconsDiv img:hover{
     background-color: rgba(0, 0, 0, 0.623);
@@ -88,7 +93,7 @@
     left: 0px;
     bottom: 0px;
     width: 100vw;
-    height: 50px;
+    height: 3vw;
     box-shadow: 0 -6px 10px 0 #0c0e2e5e;
     border-top: solid 1px rgba(255, 255, 255, 0.322);
     z-index: -1;
@@ -126,7 +131,7 @@
 }
 
 .taskBarRightIcons {
-    width: 19%;
+    width: 28%;
     justify-content: flex-end;
     align-items: center;
     right: 0px;
@@ -134,17 +139,28 @@
 
 }
 
+.taskBarRightIcons img:hover{
+    background-color: rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    background: #ffffff1a;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    cursor: pointer;
+}
+
 .taskBarRightIcons img {
-    margin-right: 5px;
-    height: 20px;
-    width: 20px;
+    height: 2.8vw;
+    width: 1.6vw ;
+    padding: 0.7vw 0.1vw 0.7vw 0.1vw;
+    margin-right: 0.2vw;
 }
 
 .taskBarRightIcons div {
     text-align: center;
-    margin-right: 0.3vw;
-    line-height: 100%;
+    width: 5.4vw;
+    line-height: 105%;
     color: white;
+    font-size: 1vw;
 }
 
 .workspace {
