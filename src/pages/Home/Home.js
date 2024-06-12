@@ -32,7 +32,7 @@ function Home() {
     const timerId = setInterval(() => {
       setTime(new Date());
     }, 1000);
-    // Limpa o intervalo quando o componente é desmontado
+ 
     return () => clearInterval(timerId);
   }, []);
 
@@ -41,7 +41,6 @@ function Home() {
       setCurrentDate(new Date());
     }, 1000);
 
-    // Limpa o intervalo quando o componente é desmontado
     return () => clearInterval(timerId);
   }, []);
 
@@ -66,9 +65,9 @@ function Home() {
         <img className='loginImg' src={ProfileImage}></img>
         <button onClick={loginFadeOut} className='loginButton'>Login</button>
         <div className='auxIconsDiv'>
-          <button><img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' /></button>
-          <button><img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' /></button>
-          <button><img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' /></button>
+          <a><img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' /></a>
+          <a><img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' /></a>
+          <a href='./home'><img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' /></a>
         </div>
       </section>
       <section className='workspace'>
