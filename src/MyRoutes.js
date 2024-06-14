@@ -7,8 +7,8 @@ import Home from './pages/Home/Home';
 export default () => {
     return (
             <Routes>
-                <Route exact path='/turnOn' element={<TurnOn/>}/>
-                <Route exact path='/home' element={<Home/>}/>
+                <Route exact path='/eneas-os/turnOn' element={<TurnOn/>}/>
+                <Route exact path='/eneas-os/home' element={<Home/>}/>
             </Routes>
     );
 }

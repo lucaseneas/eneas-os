@@ -67,7 +67,7 @@ function Home() {
         <div className='auxIconsDiv'>
           <a><img alt='internet' src='https://img.icons8.com/?size=100&id=40710&format=png&color=FFFFFF' /></a>
           <a><img alt='accessibility' src='https://img.icons8.com/?size=100&id=23608&format=png&color=FFFFFF' /></a>
-          <a href='./home'><img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' /></a>
+          <a href='./eneas-os/home'><img alt='turn off' src='https://img.icons8.com/?size=100&id=15896&format=png&color=FFFFFF' /></a>
         </div>
       </section>
       <section className='workspace'>
