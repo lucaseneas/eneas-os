@@ -5,7 +5,7 @@ function lightTurnOn() {
   const button = document.querySelector('#turnOnBackground')
   button.classList.add('turnOnBackgroundAnimation')
   setTimeout(() => {
-    window.location.href = './eneas-os/home';
+    window.location.href = './home';
   }, 3000);
 }
 
