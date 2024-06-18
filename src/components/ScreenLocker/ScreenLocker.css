@@ -1,15 +1,18 @@
-.screenLockerDiv{
-    display: none;
+@media all and (min-width: 1300px){
+    .screenLockerDiv{
+        display: none;
+    }
+    
 }
+
 .screenLockerDiv p{
     font-size:xx-large;
     color: white;
 }
 
-@media screen and (max-width:800px) {
     .screenLockerDiv{
         padding: 10%;
-        display: flex;
+        position: absolute;
         align-items: center;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.623);
@@ -20,6 +23,7 @@
         background: #ffffff1a;
         box-shadow: 0 8px 32px 0 #1f26875e;
         transition: opacity 1s ease-in-out;
+        z-index: 10;
     }
-}
+
 
