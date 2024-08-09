@@ -73,7 +73,7 @@ function Home() {
       </section>
       <section className='workspace'>
         <div className='workspaceDiv'>
-          <IconWorkspace name='Meu Portifólio' src={IconMeuPortifolio} action='frame' url='https://lucaseneas.github.io/meu-portifolio/'></IconWorkspace>
+          <IconWorkspace name='Meu Portfólio' src={IconMeuPortifolio} action='frame' url='https://lucaseneas.github.io/meu-portfolio/'></IconWorkspace>
           <IconWorkspace name='Naruto Cards' src={IconNarutoCard} action='frame' url='https://lucaseneas.github.io/naruto-card/'></IconWorkspace>
           <IconWorkspace name='GitHub' src={IconGitHub} action='external' url='https://github.com/lucaseneas'></IconWorkspace>
           <IconWorkspace name='LinkedIn' src={IconLinkedIn} action='external' url='https://www.linkedin.com/in/lucas-eneas/'></IconWorkspace>
@@ -84,7 +84,7 @@ function Home() {
             <button className='topFrame-minimize-maximize'><img src='https://img.icons8.com/?size=100&id=KERvxIIUeDAL&format=png&color=000000' /></button>
             <button onClick={closeWindow} className='topFrame-close'><img src='https://img.icons8.com/?size=100&id=16248&format=png&color=000000' /></button>
           </div>
-          <iframe id='iFrame' src="https://lucaseneas.github.io/meu-portifolio/"></iframe>
+          <iframe id='iFrame' src="https://lucaseneas.github.io/meu-portfolio/"></iframe>
         </div>
       </section>
       <section className='taskBar'>
