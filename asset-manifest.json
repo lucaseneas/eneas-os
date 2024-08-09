@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/eneas-os/static/css/main.0c69bbb1.css",
-    "main.js": "/eneas-os/static/js/main.a2bb8cfa.js",
+    "main.css": "/eneas-os/static/css/main.f48ce29e.css",
+    "main.js": "/eneas-os/static/js/main.86119c8a.js",
     "static/media/meu-portifolio.png": "/eneas-os/static/media/meu-portifolio.9b18985cf129865a0217.png",
     "static/media/profileImage.png": "/eneas-os/static/media/profileImage.9b18985cf129865a0217.png",
     "static/media/background.jpg": "/eneas-os/static/media/background.455413fdfa663a1bc2aa.jpg",
     "static/media/naruto-card.png": "/eneas-os/static/media/naruto-card.05d4f522f8a2ced8de36.png",
     "static/media/gitHub.png": "/eneas-os/static/media/gitHub.69ffd9cd5a846c976177.png",
     "index.html": "/eneas-os/index.html",
-    "main.0c69bbb1.css.map": "/eneas-os/static/css/main.0c69bbb1.css.map",
-    "main.a2bb8cfa.js.map": "/eneas-os/static/js/main.a2bb8cfa.js.map"
+    "main.f48ce29e.css.map": "/eneas-os/static/css/main.f48ce29e.css.map",
+    "main.86119c8a.js.map": "/eneas-os/static/js/main.86119c8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c69bbb1.css",
-    "static/js/main.a2bb8cfa.js"
+    "static/css/main.f48ce29e.css",
+    "static/js/main.86119c8a.js"
   ]
 }
